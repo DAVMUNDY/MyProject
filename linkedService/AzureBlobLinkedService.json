@@ -1,0 +1,11 @@
+{
+	"name": "AzureBlobLinkedService",
+	"properties": {
+		"description": "blob account",
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"serviceEndpoint": "https://stgenericblob.blob.core.windows.net"
+		}
+	}
+}

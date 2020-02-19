@@ -1,0 +1,103 @@
+{
+	"name": "CopyPipeline_ax9",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy_ax9",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "landing/src/prq/pems_parquet/"
+					},
+					{
+						"name": "Destination",
+						"value": "dbo.parqflow"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "ParquetSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"wildcardFileName": "*"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings",
+							"skipLineCount": 0
+						}
+					},
+					"sink": {
+						"type": "SqlMISink"
+					},
+					"enableStaging": false,
+					"enableSkipIncompatibleRow": true,
+					"redirectIncompatibleRowSettings": {
+						"linkedServiceName": {
+							"referenceName": "AzureBlobLinkedService",
+							"type": "LinkedServiceReference"
+						},
+						"path": "adftutorial/output"
+					},
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "timeperiod",
+									"type": "UTF8"
+								},
+								"sink": {
+									"name": "timeperiod",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "flow1",
+									"type": "INT32"
+								},
+								"sink": {
+									"name": "flow1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "occupancy1",
+									"type": "DOUBLE"
+								},
+								"sink": {
+									"name": "occupancy1",
+									"type": "String"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_ax9",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DestinationDataset_ax9",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}

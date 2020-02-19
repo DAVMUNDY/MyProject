@@ -1,5 +1,5 @@
 {
-	"name": "OutputDatasetJson",
+	"name": "DS_BLOB_JSON",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobLinkedService",

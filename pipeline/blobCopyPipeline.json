@@ -32,13 +32,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "InputDataset",
+						"referenceName": "DS_BLOB_EMP",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "OutputDatasetBinary",
+						"referenceName": "DS_BLOB_BIN",
 						"type": "DatasetReference"
 					}
 				]

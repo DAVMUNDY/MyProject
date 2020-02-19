@@ -1,5 +1,5 @@
 {
-	"name": "InputDataset",
+	"name": "DS_BLOB_EMP",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobLinkedService",

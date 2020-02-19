@@ -1,0 +1,99 @@
+{
+	"name": "SourceDataset_ax9",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureADLSg2LinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "src/prq/pems_parquet",
+				"fileSystem": "landing"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "timeperiod"
+			},
+			{
+				"name": "flow1"
+			},
+			{
+				"name": "occupancy1"
+			},
+			{
+				"name": "speed1"
+			},
+			{
+				"name": "flow2"
+			},
+			{
+				"name": "occupancy2"
+			},
+			{
+				"name": "speed2"
+			},
+			{
+				"name": "flow3"
+			},
+			{
+				"name": "occupancy3"
+			},
+			{
+				"name": "speed3"
+			},
+			{
+				"name": "flow4"
+			},
+			{
+				"name": "occupancy4"
+			},
+			{
+				"name": "speed4"
+			},
+			{
+				"name": "flow5"
+			},
+			{
+				"name": "occupancy5"
+			},
+			{
+				"name": "speed5"
+			},
+			{
+				"name": "flow6"
+			},
+			{
+				"name": "occupancy6"
+			},
+			{
+				"name": "speed6"
+			},
+			{
+				"name": "flow7"
+			},
+			{
+				"name": "occupancy7"
+			},
+			{
+				"name": "speed7"
+			},
+			{
+				"name": "flow8"
+			},
+			{
+				"name": "occupancy8"
+			},
+			{
+				"name": "speed8"
+			},
+			{
+				"name": "station"
+			}
+		]
+	}
+}

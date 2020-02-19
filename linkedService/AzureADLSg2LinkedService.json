@@ -1,0 +1,11 @@
+{
+	"name": "AzureADLSg2LinkedService",
+	"properties": {
+		"description": "ADLSg2",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://stgenericadls.dfs.core.windows.net"
+		}
+	}
+}

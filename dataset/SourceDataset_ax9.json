@@ -17,82 +17,108 @@
 		},
 		"schema": [
 			{
-				"name": "timeperiod"
+				"name": "timeperiod",
+				"type": "UTF8"
 			},
 			{
-				"name": "flow1"
+				"name": "flow1",
+				"type": "INT32"
 			},
 			{
-				"name": "occupancy1"
+				"name": "occupancy1",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "speed1"
+				"name": "speed1",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "flow2"
+				"name": "flow2",
+				"type": "INT32"
 			},
 			{
-				"name": "occupancy2"
+				"name": "occupancy2",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "speed2"
+				"name": "speed2",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "flow3"
+				"name": "flow3",
+				"type": "INT32"
 			},
 			{
-				"name": "occupancy3"
+				"name": "occupancy3",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "speed3"
+				"name": "speed3",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "flow4"
+				"name": "flow4",
+				"type": "INT32"
 			},
 			{
-				"name": "occupancy4"
+				"name": "occupancy4",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "speed4"
+				"name": "speed4",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "flow5"
+				"name": "flow5",
+				"type": "INT32"
 			},
 			{
-				"name": "occupancy5"
+				"name": "occupancy5",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "speed5"
+				"name": "speed5",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "flow6"
+				"name": "flow6",
+				"type": "INT32"
 			},
 			{
-				"name": "occupancy6"
+				"name": "occupancy6",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "speed6"
+				"name": "speed6",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "flow7"
+				"name": "flow7",
+				"type": "INT32"
 			},
 			{
-				"name": "occupancy7"
+				"name": "occupancy7",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "speed7"
+				"name": "speed7",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "flow8"
+				"name": "flow8",
+				"type": "INT32"
 			},
 			{
-				"name": "occupancy8"
+				"name": "occupancy8",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "speed8"
+				"name": "speed8",
+				"type": "DOUBLE"
 			},
 			{
-				"name": "station"
+				"name": "station",
+				"type": "UTF8"
 			}
 		]
 	}

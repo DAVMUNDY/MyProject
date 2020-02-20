@@ -1,0 +1,122 @@
+{
+	"name": "DS_SRC_ADLS_FLOW_PRQ",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureADLSg2LinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "part-r-00000-ddaee723-f3f6-4f25-a34b-3312172aa6d7.snappy.parquet",
+				"folderPath": "src/prq/pems_parquet/station=402260",
+				"fileSystem": "landing"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "timeperiod",
+				"type": "String"
+			},
+			{
+				"name": "flow1",
+				"type": "INT32"
+			},
+			{
+				"name": "occupancy1",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "speed1",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "flow2",
+				"type": "INT32"
+			},
+			{
+				"name": "occupancy2",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "speed2",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "flow3",
+				"type": "INT32"
+			},
+			{
+				"name": "occupancy3",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "speed3",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "flow4",
+				"type": "INT32"
+			},
+			{
+				"name": "occupancy4",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "speed4",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "flow5",
+				"type": "INT32"
+			},
+			{
+				"name": "occupancy5",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "speed5",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "flow6",
+				"type": "INT32"
+			},
+			{
+				"name": "occupancy6",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "speed6",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "flow7",
+				"type": "INT32"
+			},
+			{
+				"name": "occupancy7",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "speed7",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "flow8",
+				"type": "INT32"
+			},
+			{
+				"name": "occupancy8",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "speed8",
+				"type": "DOUBLE"
+			}
+		]
+	}
+}

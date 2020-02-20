@@ -19,7 +19,7 @@
 		"schema": [
 			{
 				"name": "timeperiod",
-				"type": "String"
+				"type": "UTF8 (Strings)"
 			},
 			{
 				"name": "flow1",

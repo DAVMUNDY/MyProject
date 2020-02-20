@@ -49,8 +49,7 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "timeperiod",
-									"type": "UTF-8"
+									"name": "flow1"
 								},
 								"sink": {
 									"name": "timeperiod",
@@ -59,8 +58,7 @@
 							},
 							{
 								"source": {
-									"name": "flow1",
-									"type": "INT32"
+									"name": "occupancy1"
 								},
 								"sink": {
 									"name": "flow1",
@@ -69,8 +67,7 @@
 							},
 							{
 								"source": {
-									"name": "occupancy1",
-									"type": "DOUBLE"
+									"name": "speed1"
 								},
 								"sink": {
 									"name": "occupancy1",

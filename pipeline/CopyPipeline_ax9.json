@@ -49,8 +49,7 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "timeperiod",
-									"type": "UTF8"
+									"name": "flow1"
 								},
 								"sink": {
 									"name": "timeperiod",

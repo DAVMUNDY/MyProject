@@ -49,7 +49,7 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "flow1"
+									"name": "timeperiod"
 								},
 								"sink": {
 									"name": "timeperiod",

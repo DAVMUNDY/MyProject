@@ -7,9 +7,17 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-internal-uk"
 		},
-		"AzureBlobLinkedService_properties_typeProperties_serviceEndpoint": {
+		"AzureBlobLinkedService_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobLinkedService'"
+		},
+		"AzureSql_dmundy_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSql_dmundy'"
+		},
+		"AzureADLSg2LinkedService_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://stgenericblob.blob.core.windows.net"
+			"defaultValue": "https://stgenericadls.dfs.core.windows.net"
 		},
 		"containerUri": {
 			"type": "string",
@@ -38,12 +46,38 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AzureBlobLinkedService_properties_typeProperties_serviceEndpoint": {
-						"value": "[parameters('AzureBlobLinkedService_properties_typeProperties_serviceEndpoint')]"
+					"AzureBlobLinkedService_connectionString": {
+						"value": "[parameters('AzureBlobLinkedService_connectionString')]"
+					},
+					"AzureSql_dmundy_connectionString": {
+						"value": "[parameters('AzureSql_dmundy_connectionString')]"
+					},
+					"AzureADLSg2LinkedService_properties_typeProperties_url": {
+						"value": "[parameters('AzureADLSg2LinkedService_properties_typeProperties_url')]"
 					}
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'ArmTemplate_0')]"
+			]
 		}
 	]
 }

@@ -1,0 +1,16 @@
+{
+	"name": "SourceDataset_45x",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "orcl_12c_testvm",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "OracleTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "SCOTT",
+			"table": "EMP"
+		}
+	}
+}

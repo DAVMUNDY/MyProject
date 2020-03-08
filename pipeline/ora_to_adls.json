@@ -1,0 +1,137 @@
+{
+	"name": "ora_to_adls",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy_45x",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "SCOTT.EMP"
+					},
+					{
+						"name": "Destination",
+						"value": "landing//emp_ora"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "OracleSource",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings",
+							"quoteAllText": true,
+							"filePattern": "setOfObjects"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "EMPNO",
+									"type": "Decimal"
+								},
+								"sink": {
+									"path": "$['EMPNO']"
+								}
+							},
+							{
+								"source": {
+									"name": "ENAME",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['ENAME']"
+								}
+							},
+							{
+								"source": {
+									"name": "JOB",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['JOB']"
+								}
+							},
+							{
+								"source": {
+									"name": "MGR",
+									"type": "Decimal"
+								},
+								"sink": {
+									"path": "$['MGR']"
+								}
+							},
+							{
+								"source": {
+									"name": "HIREDATE",
+									"type": "DateTime"
+								},
+								"sink": {
+									"path": "$['HIREDATE']"
+								}
+							},
+							{
+								"source": {
+									"name": "SAL",
+									"type": "Decimal"
+								},
+								"sink": {
+									"path": "$['SAL']"
+								}
+							},
+							{
+								"source": {
+									"name": "COMM",
+									"type": "Decimal"
+								},
+								"sink": {
+									"path": "$['COMM']"
+								}
+							},
+							{
+								"source": {
+									"name": "DEPTNO",
+									"type": "Decimal"
+								},
+								"sink": {
+									"path": "$['DEPTNO']"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_45x",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DestinationDataset_45x",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}

@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSql_dmundy'"
 		},
+		"orcl_12c_testvm_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'orcl_12c_testvm'"
+		},
 		"AzureADLSg2LinkedService_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://stgenericadls.dfs.core.windows.net"
@@ -51,6 +55,9 @@
 					},
 					"AzureSql_dmundy_connectionString": {
 						"value": "[parameters('AzureSql_dmundy_connectionString')]"
+					},
+					"orcl_12c_testvm_connectionString": {
+						"value": "[parameters('orcl_12c_testvm_connectionString')]"
 					},
 					"AzureADLSg2LinkedService_properties_typeProperties_url": {
 						"value": "[parameters('AzureADLSg2LinkedService_properties_typeProperties_url')]"

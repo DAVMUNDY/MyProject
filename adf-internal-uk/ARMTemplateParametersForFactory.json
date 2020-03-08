@@ -11,6 +11,9 @@
 		"AzureSql_dmundy_connectionString": {
 			"value": ""
 		},
+		"orcl_12c_testvm_connectionString": {
+			"value": ""
+		},
 		"AzureADLSg2LinkedService_properties_typeProperties_url": {
 			"value": "https://stgenericadls.dfs.core.windows.net"
 		}

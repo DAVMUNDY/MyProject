@@ -5,8 +5,8 @@
 		"annotations": [],
 		"type": "Oracle",
 		"typeProperties": {
-			"connectionString": "host=51.140.253.145;port=1521;servicename=orcl;user id=dav",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI4ZTRkODUxNi1iMDdiLTRhNTAtOTQwZC0xYzdhOTcyNGU4NzkiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"connectionString": "host=51.140.253.145;port=1521;servicename=orcl;user id=dav;oracle.net.encryption_client=REQUIRED;oracle.net.encryption_types_client=AES256",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJiNmFhZjRiZS00ZjhlLTQwMjctYjlmOS05YjE2NjRhYmFjODAiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "ADFintegrationRuntime1",

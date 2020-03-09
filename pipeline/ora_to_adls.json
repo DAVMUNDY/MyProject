@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy_45x",
+				"name": "ora_to_adls",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -120,7 +120,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "SourceDataset_45x",
+						"referenceName": "DS_ORA_SCOTTEMP",
 						"type": "DatasetReference"
 					}
 				],

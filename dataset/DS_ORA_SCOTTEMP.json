@@ -1,8 +1,8 @@
 {
-	"name": "SourceDataset_45x",
+	"name": "DS_ORA_SCOTTEMP",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "orcl_12c_testvm",
+			"referenceName": "orcl_12c_testvm_ir",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],

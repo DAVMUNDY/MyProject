@@ -1,0 +1,10 @@
+{
+	"name": "Trg_azureBlobDM",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"serviceEndpoint": "https://stgenericblob.blob.core.windows.net"
+		}
+	}
+}
